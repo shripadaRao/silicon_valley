@@ -3,13 +3,7 @@
 """REMOVE EMPTY LINES"""
 """REMOVE '*' AND REPLACE"""
 """REMOVE LINES THAT START WITH '(' (this is required for getting data into dataModel)"""
-"""GET DATA INTO REQUIRED FORM"""
-
-"""logic for parsing data.
-    1. 
-    2. find substring with ':' that becames value of character_name.
-    3. add '[' and ']'
-    """
+"""GETs DATA INTO REQUIRED FORM"""
     
 def readfile(file):
     with open(file,'r') as f:
@@ -40,10 +34,9 @@ def remove_line(infile,outfile):
     updated_dataList_string = str1.join(updated_dataList)
     writefile(outfile,updated_dataList_string)
 
-remove_line('storage/line_operation1.txt','storage/line_operation2.txt')
+#remove_line('storage/line_operation1.txt','storage/line_operation2.txt')
 
 #####----------------------------------------------------------------------#####
-
 
 ReplaceWordList = {
     "sh1t" : "shit",
@@ -60,7 +53,6 @@ def string_replacement(read_file,write_file):
         data = data.replace(word, replacement)
     with open(write_file,'w') as f:
         f.write(data)
-#string_replacement('storage/line_operation2.txt','storage/bad_words_removed.txt')
+#string_replacement('storage/line_operation2.txt','storage/words_removed.txt')
+
 ####----------------------------------------------------------------------#######
-
-
