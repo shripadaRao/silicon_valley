@@ -1,0 +1,10 @@
+website to re-create quotes from Silicon Valley tv show.
+fetch data from : "https://siliconvalleyism.com/silicon-valley-quotes.php"
+perform strings operations and get it to required data model.
+upload it to mongodb
+do them backend. (flask maybe??) 1. make a homepage [/] 2. make a character page where it displayes their quotes. [/{character_name}] 3. deploy the backend on heroku/pythonanywhere
+do them frontend. (react)
+
+do them ML.
+
+Now, Scripts.

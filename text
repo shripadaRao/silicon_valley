@@ -1,4 +1,0 @@
-website to re-create quotes from Silicon Vallwy tv show.
-fetch data from : "https://siliconvalleyism.com/silicon-valley-quotes.php"
-perform strings operations and get it to required data model.
-upload it to mongodb
