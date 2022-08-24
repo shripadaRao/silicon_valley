@@ -8,7 +8,7 @@ with open('env.txt','r') as f:
 
 client = MongoClient(MONGO_URI)
 db = client["SiliconValley"]
-col = db["Quotes"]
+col = db["QuotesFinal"]
 
 DataModel = {"_id":1, "character_name":"", "quote":""}         
 

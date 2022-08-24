@@ -18,6 +18,11 @@ def get_lists(readfile):
         for list_ in data_list:
             c_name = list_.split(':')[0]
             quote_ = list_.split(':')[1]
+
+            #performing string operations to quote_. REMOVE '\n' and space in the beginning.
+            quote_ = quote_[1:]
+            quote_ = quote_[:-1]
+
             character_name_list.append(c_name)
             quotes_list.append(quote_)
     return(character_name_list,quotes_list)
